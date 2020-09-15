@@ -1,13 +1,21 @@
-.xd{
+.barra{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px;
+    margin: 30px 50px 0px 50px;
+}
+
+.barra h1{
+    font-family: 'Playfair Display SC', serif;
 }
 
 .header{
     display: flex;
     flex-direction: column;
+    background-image: url(../img/sushi1.jpg);
+    background-size: 100%;
+    padding-bottom: 800px;
+    color: white;
 }
 
 .header img{
@@ -26,9 +34,14 @@
 .menu ul li a{
     text-decoration: none;
     margin-left: 32px;
-    color: black;
+    color: white;
+    font-family: 'Cinzel', serif;
 }
 
+.menu ul li a span{
+    border: 2px solid white;
+    padding: 8px 20px 8px 20px;
+}
 
 /* -------------------- */
 
@@ -37,6 +50,10 @@
     background-color: blanchedalmond;
     padding: 90px 20px 50px 20px;
     margin-top: 15px;
+}
+
+.center h1{
+    font-family: 'Playfair Display SC', serif;
 }
 
 .cajas{
@@ -115,17 +132,22 @@
 .footer{
     display: flex;
     justify-content: space-between;
+    padding: 50px;
 }
 
-.info{
+.contact{
     display: flex;
     align-items: center;
+    border: 1px solid rgb(51, 51, 51);
+    padding: 10px 150px 10px 10px;
+    border-radius: 8px;
 }
 
-.info img{
+.contact img{
     height: 60px;
     border-radius: 60px;
     margin-right: 16px;
+    box-shadow: 1px 1px 10px gray;
 }
 
 .info2 p{
@@ -136,4 +158,16 @@
     font-weight: normal;
     font-size: smaller;
 }
+
+.redes i{
+    color: white;
+    font-size: 20px;
+    background: rgb(51, 51, 51);
+    padding: 10px;
+    border-radius: 20px;
+    width: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
 
