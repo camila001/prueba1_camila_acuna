@@ -13,14 +13,9 @@
     display: flex;
     flex-direction: column;
     background-image: url(../img/sushi1.jpg);
+    background-repeat: no-repeat;
     background-size: 100%;
-    padding-bottom: 800px;
     color: white;
-}
-
-.header img{
-    width: 100%;
-    height: 100%;
 }
 
 .menu ul{
@@ -43,11 +38,23 @@
     padding: 8px 20px 8px 20px;
 }
 
+.sushi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playfair Display SC', serif;
+    text-align: center;
+    font-size: 100px;
+    margin: 0 auto;
+
+}
+
 /* -------------------- */
 
 .center{
     text-align: center;
-    background-color: blanchedalmond;
+    background-color: rgb(223, 210, 210);
     padding: 90px 20px 50px 20px;
     margin-top: 15px;
 }
@@ -60,7 +67,9 @@
     display: flex;
     justify-content: space-around;
     padding-top: 20px;
+    font-family: 'Spartan', sans-serif;
 }
+
 
 .caja{
     display: flex;
@@ -84,21 +93,23 @@
 /* -------------------- */
 
 .about{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-
 .texto{
+    padding-top: 100px;
     text-align: center;
-    margin: 80px 150px 80px 150px;
+    font-family: 'Playfair Display SC', serif;
 }
 
 .texto p{
-    padding-top: 30px;
+    padding: 30px 100px 0px 100px;
     text-align: justify;
+    font-family: 'Josefin Slab', serif;
 }
 
-.about img{
-    width: 700px;
+.img1 img{
+    width: 100%;
 }
 
 /* -------------------- */
@@ -108,8 +119,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: blanchedalmond;
+    background-color: rgb(223, 210, 210);
     padding: 50px 0px 80px 0px;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.subscribe p{
+    font-family: 'Spartan', sans-serif;
 }
 
 .subscribe input{
@@ -120,11 +136,13 @@
     border: 1px solid white;
     margin-top: 20px;
     margin-bottom: 20px;
+    font-family: 'Josefin Slab', serif;
 }
 
 .subscribe button{
     background: none;
     padding: 8px 30px 8px 30px;
+    font-family: 'Cinzel', serif;
 }
 
 /* -------------------- */
@@ -170,4 +188,34 @@
     margin-top: 50px;
 }
 
+.menu2 ul{
+    display: flex;
+}
 
+.menu2 ul li{
+    list-style-type: none;
+}
+
+.menu2 ul li a{
+    text-decoration: none;
+    margin-left: 32px;
+    color: black;
+    font-family: 'Cinzel', serif;
+}
+
+@media screen and (max-width: 768px){
+    .header{
+        padding-bottom: 200px;
+    }
+
+    .cajas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .caja{
+        margin-bottom: 20px;
+    }
+}
