@@ -28,3 +28,23 @@
     margin-left: 32px;
     color: black;
 }
+
+
+/* -------------------- */
+
+.cajas{
+    display: flex;
+}
+
+.caja{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja img{
+    width: 150px;
+    height: 150px;
+}
