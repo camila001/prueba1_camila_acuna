@@ -32,19 +32,40 @@
 
 /* -------------------- */
 
+.center{
+    text-align: center;
+    background-color: blanchedalmond;
+    padding: 90px 20px 50px 20px;
+    margin-top: 15px;
+}
+
 .cajas{
     display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
 }
 
 .caja{
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: white;
+    width: 250px;
+    box-shadow: 1px 1px 10px rgb(71, 70, 70);
+}
+
+.caja p{
+    padding: 20px 45px 40px 45px;
+    text-align: center;
 }
 
 .caja img{
-    width: 150px;
-    height: 150px;
+    width: 100%;
+}
+
+/* -------------------- */
+
+.about img{
+    width: 700px;
 }
